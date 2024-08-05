@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM</title>
+</head>
+<body style="background-color: black; color: white;">
+	<div class="week">
+		<div class="day">Monday</div>
+		<div class="day">Tuesday</div>
+		<div class="day">WednesDay</div>
+		<div class="day">ThursDay</div>
+	</div>
+</body>
+
+<script>
+	let week=document.querySelector('.week')
+	console.log(week);
+	let day=week.children;
+	console.log(day);
+	
+	for(let i=0;i<day.length;i++){
+		day[i].style.color="violet"
+		day[i].style.padding="10px"
+		day[i].style.font="20px"
+	}
+
+	let day1=day[0];
+	console.log(day1);
+	
+	let parent=day1.parentElement
+	console.log(parent);
+
+	let sibling=day1.nextElementSibling
+	console.log(sibling);
+	
+	
+	let firstChild=week.firstElementChild
+	console.log(firstChild);
+
+	let lastChild=week.lastElementChild
+	console.log(lastChild);
+	
+	console.log("Nodes : " , week.childNodes);
+	
+</script>
+
+</html>
