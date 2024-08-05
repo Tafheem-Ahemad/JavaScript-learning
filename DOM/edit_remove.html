@@ -5,6 +5,32 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<ul class="language">
+		<li>JavaScript</li>
+	</ul>
 </body>
+
+<script>
+	function addEle(s){
+		const newEle=document.createElement('li')
+		newEle.appendChild(document.createTextNode(s))
+		document.querySelector('.language').appendChild(newEle)
+	}
+
+	function removeEle(num){
+		document.querySelector(`li:nth-child(${num})`).remove()
+	}
+
+	function editEle(s,num){
+		const newEle=document.createElement('li')
+		newEle.appendChild(document.createTextNode(s))
+		document.querySelector(`li:nth-child(${num})`).replaceWith(newEle);
+	}
+
+	addEle('C++')
+	addEle('Java')
+	removeEle(1)
+	editEle('C',2)
+
+</script>
 </html>
