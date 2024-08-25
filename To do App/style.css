@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+:root {
+	--light-gray:  #7284a1;
+}
+
+.input_todo{
+	flex-basis: 60%;
+}
+
+
+.todo_data{
+	margin-top: 3rem;
+}
+
+.todo_no{
+	flex-basis: 3%;
+}
+.todo_item{
+	flex-basis: 60%;
+}
+.todo_status{
+	flex-basis: 10%;
+}
+.todo_action{
+	flex-basis: 15%;
+}
+
+.new_todo_item{
+	/* color: var(--light-gray); */
+	font-size: 1.25rem;
+	/* margin-bottom: 1rem; */
+}
